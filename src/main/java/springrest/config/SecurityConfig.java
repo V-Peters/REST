@@ -40,7 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) {
 		
 		try {
-			http.cors().and().authorizeRequests().antMatchers("/**").permitAll();
+			http.cors().and().csrf().disable().authorizeRequests().antMatchers("/**").permitAll();
 //	        	.antMatchers("/", "/login", "/logout", "/meeting/list", "/user/autoLogout", "/user/register")
 //	        		.permitAll()
 //				.antMatchers("/meetingUser/signUp", "/meetingUser/signOut").permitAll()
