@@ -19,4 +19,10 @@ public class MeetingService {
 		return meetingRepository.findAll();
 	}
 
+
+	public void deleteMeeting(int meetingId) {
+		System.out.println("delete in service");
+		this.meetingRepository.deleteById(meetingId);
+	}
+
 }
