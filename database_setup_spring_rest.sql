@@ -12,7 +12,7 @@ ALTER USER 'spring-rest'@'localhost' IDENTIFIED WITH mysql_native_password BY 's
 # setting up a new database:
 #########################################################################################################################################
 
-DROP DATABASE IF EXISTS `spring-meetingmeetingrest`;
+DROP DATABASE IF EXISTS `spring-rest`;
 CREATE DATABASE `spring-rest`;
 
 
